@@ -16,11 +16,25 @@ MODULE Module1
     PROC main()
         !Add your code here
         MoveJ pontoInicial, v1000, z50, tool0;
-        MoveJ pontoSeguranca, v1000, z50, tool0;
+        MoveL pontoSeguranca, v1000, z50, tool0;
+        retangulo;
+        MoveL pontoSeguranca, v1000, z50, tool0;
+        losango;
+        MoveL pontoSeguranca, v1000, z50, tool0;
+        
+    ENDPROC
+    PROC retangulo()
         MoveL pontoRetangulo, v1000, fine, tool0;
         MoveL Offs(pontoRetangulo, 60,0,0), v1000, fine, tool0;
         MoveL Offs(pontoRetangulo, 60,-100,0), v1000, fine, tool0;
         MoveL Offs(pontoRetangulo, 0,-100,0), v1000, fine, tool0;
         MoveL pontoRetangulo, v1000, fine, tool0;
+    ENDPROC
+    PROC losango()
+         MoveL Offs(pontoRetangulo, 30,-10,0), v1000, fine, tool0;
+         MoveL Offs(pontoRetangulo, 50,-50,0), v1000, fine, tool0;
+         MoveL Offs(pontoRetangulo, 30,-90,0), v1000, fine, tool0;
+         MoveL Offs(pontoRetangulo, 10,-50,0), v1000, fine, tool0;
+         MoveL Offs(pontoRetangulo, 30,-10,0), v1000, fine, tool0;
     ENDPROC
 ENDMODULE
