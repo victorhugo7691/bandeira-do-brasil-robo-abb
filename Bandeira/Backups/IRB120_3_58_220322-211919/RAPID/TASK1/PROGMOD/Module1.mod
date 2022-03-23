@@ -35,7 +35,7 @@ MODULE Module1
     ENDPROC
     PROC circulo()
         MoveL Offs(pontoRetangulo, 30,-35,0), v1000, fine, tool0;
-        MoveC Offs(pontoRetangulo, 40, -45, 0), Offs(pontoRetangulo, 30, -65, 0), v1000, z10, tool0;
-        MoveC Offs(pontoRetangulo, 20, -50, 0), Offs(pontoRetangulo, 30,-30,0), v1000, z10, tool0;
+        MoveC Offs(pontoRetangulo, 43, -50, 0), Offs(pontoRetangulo, 30, -65, 0), v100, z10, tool0;
+        MoveC Offs(pontoRetangulo, 17, -50, 0), Offs(pontoRetangulo, 30,-35,0), v100, z10, tool0;
     ENDPROC
 ENDMODULE
